@@ -1,2 +1,14 @@
 # memo-git
-premier test de repo à distance
+Synchroniser un répo sur GitHub avec commande en local (git bash)
+    - git remote add origin <lien HTTP ou SSH dispo dans GitHub>
+    - git push -u origin master (ou main en fonction de la branch)
+
+Versionner ses fichiers
+    - cd <chemin du dossier> (attention /g/ et pas \g\)
+    - git init (une seule fois)
+    - git add . (ajoute tous les fichiers du dossier)
+    - git status (pour voir l'état des fichiers, à répérer si besoin ou problèmes)
+    - git commit -m "commentaires" (faire un commentaire précis)
+    - git add puis git commit (si modification(s) apportée(s) sur un fichier)
+    - git log (une seule fois pour voir tous les commit)
+    - git push (une seule fois pour tous les commits ou après chaque commit)
