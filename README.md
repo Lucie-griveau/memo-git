@@ -12,3 +12,8 @@ Versionner ses fichiers
     - git add puis git commit (si modification(s) apportée(s) sur un fichier)
     - git log (une seule fois pour voir tous les commit)
     - git push (une seule fois pour tous les commits ou après chaque commit)
+
+Utiliser la ligne de commande (git bash)
+    - pwd = dans quel répertoire on se trouve
+    - ls = quels sont les fichiers dans ce répertoire
+    - ls -al = idem ls mais avec les fichiers en cache
