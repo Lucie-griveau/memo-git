@@ -17,3 +17,16 @@ Utiliser la ligne de commande (git bash)
     - pwd = dans quel répertoire on se trouve
     - ls = quels sont les fichiers dans ce répertoire
     - ls -al = idem ls mais avec les fichiers en cache
+
+Gérer un conflit
+    - git status
+    - supprimer la ligne conflictuelle dans VSCode (vert = local, bleu = distance)
+    
+<<<<<<< HEAD
+open an issue
+=======
+ask your question in IRC.
+>>>>>>> branch-a
+
+    - git add
+    - git commit -m "fixed merge conflict"
