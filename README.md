@@ -1,32 +1,31 @@
 # memo-git
 Synchroniser un répo sur GitHub avec commande en local (git bash)
-    - git remote add origin <lien HTTP ou SSH dispo dans GitHub>
-    - git push -u origin master (ou main en fonction de la branch)
+1) git remote add origin <lien HTTP ou SSH dispo dans GitHub>
+2) git push -u origin master (ou main en fonction de la branch)
 
 Versionner ses fichiers
-    - cd <chemin du dossier> (attention /g/ et pas \g\)
-    - git init (une seule fois)
-    - git add . (ajoute tous les fichiers du dossier)
-    - git status (pour voir l'état des fichiers, à répérer si besoin ou problèmes)
-    - git commit -m "commentaires" (faire un commentaire précis)
-    - git add puis git commit (si modification(s) apportée(s) sur un fichier)
-    - git log (une seule fois pour voir tous les commit)
-    - git push (une seule fois pour tous les commits ou après chaque commit)
+1) git init (une seule fois)
+2) git add . (ajoute tous les fichiers du dossier)
+3) git status (pour voir l'état des fichiers, à répérer si besoin ou problèmes)
+4) git commit -m "commentaires" (faire un commentaire précis)
+5) git add puis git commit (si modification(s) apportée(s) sur un fichier)
+6) git log (une seule fois pour voir tous les commit)
+7) git push (une seule fois pour tous les commits ou après chaque commit)
 
 Utiliser la ligne de commande (git bash)
-    - pwd = dans quel répertoire on se trouve
-    - ls = quels sont les fichiers dans ce répertoire
-    - ls -al = idem ls mais avec les fichiers en cache
+- cd <chemin du dossier> (attention /g/ et pas \g\)
+- pwd = dans quel répertoire on se trouve
+- ls = quels sont les fichiers dans ce répertoire
+- ls -al = idem ls mais avec les fichiers en cache
 
 Gérer un conflit
-    - git status
-    - supprimer la ligne conflictuelle dans VSCode (vert = local, bleu = distance)
-    
-<<<<<<< HEAD
-open an issue
+1) git status
+2) supprimer la ligne conflictuelle dans VSCode (marqueur de conflit: vert = HEAD local, bleu = distance)
+<<<<<<<HEAD (Current Change)
+ligne modifiée en local
 =======
-ask your question in IRC.
->>>>>>> branch-a
-
-    - git add
-    - git commit -m "fixed merge conflict"
+ligne modifiée en distant
+>>>>>> branch-a (Incomming Change)
+3) git add <le fichier modifier ou tout>
+4) enchainer git status et git add si beaucoup de fichiers en conflit
+5) git commit -m "fixed merge conflict"
